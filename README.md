@@ -1,6 +1,8 @@
 # IMDA_Captchas_recognition
 This is a program for recognizing captchas in an image
-
+Problem formulation: the image is segmented vertically and equally into 5 smaller segments. Each segment corresponds to a character. 
+                     The problem of recognizing captchas can be formulated as classifying a segment into a character (0-9,A-Z). This is a multi-class classification problem. 
+Steps:
 1. upload all   .txt files into colab.
 2. split these .txt files into two lists output_file_list and input_file_list. In each list, the .txt file is arranged in increasing order, e.g., input00, input01...input 24
 3. I converted the RGB values to a single grayscale pixel value
